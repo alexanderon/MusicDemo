@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AlbumViewController.h
 //  Music
 //
 //  Created by RAHUL on 9/22/15.
@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface ViewController : UIViewController
+@interface AlbumViewController : UITableViewController
 
+{
+    NSString *albumTitle;
+}
 
+@property NSString *albumTitle;
 @end
-
