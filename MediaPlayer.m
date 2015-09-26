@@ -22,10 +22,12 @@
 }
 
 
+
 - (id)init {
     if (self = [super init]) {
      //   someProperty = [[NSString alloc] initWithString:@"Default Property Value"];
         musicPlayer =[MPMusicPlayerController applicationMusicPlayer];
+     
     }
     return self;
 }

@@ -23,6 +23,7 @@
     musicPlayer =[MPMusicPlayerController applicationMusicPlayer];
     [self registerMediaPlayerNotifications];
     
+   
    }
 
 - (void) viewWillAppear:(BOOL)animated

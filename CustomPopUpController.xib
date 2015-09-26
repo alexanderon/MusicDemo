@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomPopUpController">
             <connections>
                 <outlet property="btnPlay" destination="gwp-od-43W" id="dA0-SU-G7h"/>
+                <outlet property="btnTrans" destination="w09-Vm-D06" id="amn-6h-QsC"/>
                 <outlet property="imageView" destination="1yV-ao-24f" id="cy9-Ga-KK8"/>
                 <outlet property="lblSubtitle" destination="kHO-El-VAE" id="ebB-lE-fxf"/>
                 <outlet property="lblTitle" destination="XnM-2S-f5q" id="6Ka-eI-KOu"/>
@@ -32,12 +34,18 @@
                     <color key="textColor" red="0.89343410519999999" green="0.95361631889999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="0.89343410519999999" green="0.95361631889999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-od-43W">
-                    <rect key="frame" x="267" y="15" width="38" height="38"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-od-43W">
+                    <rect key="frame" x="267" y="0.0" width="53" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="FmK-u1-eiA"/>
+                    </constraints>
                     <inset key="imageEdgeInsets" minX="-20" minY="-20" maxX="-30" maxY="-20"/>
                     <state key="normal" image="Play-icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnPlayClick:" destination="-1" eventType="touchUpInside" id="YmU-Jm-ufw"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHO-El-VAE">
                     <rect key="frame" x="68" y="38" width="31" height="15"/>
@@ -45,14 +53,28 @@
                     <color key="textColor" red="0.89343410519999999" green="0.95361631889999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w09-Vm-D06">
+                    <rect key="frame" x="0.0" y="0.0" width="262" height="68"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.1764705882" green="0.035294117649999998" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="w09-Vm-D06" secondAttribute="bottom" id="Flt-jJ-hIM"/>
+                <constraint firstAttribute="trailing" secondItem="gwp-od-43W" secondAttribute="trailing" id="I49-Ht-ZQ3"/>
                 <constraint firstAttribute="bottom" secondItem="kHO-El-VAE" secondAttribute="bottom" constant="15" id="I7J-wG-X2U"/>
                 <constraint firstItem="kHO-El-VAE" firstAttribute="top" secondItem="XnM-2S-f5q" secondAttribute="bottom" constant="1" id="J4C-PX-R7N"/>
                 <constraint firstItem="kHO-El-VAE" firstAttribute="leading" secondItem="1yV-ao-24f" secondAttribute="trailing" constant="8" id="RoR-Vh-Dh1"/>
+                <constraint firstItem="gwp-od-43W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sx9-Ha-MaR"/>
                 <constraint firstItem="XnM-2S-f5q" firstAttribute="leading" secondItem="1yV-ao-24f" secondAttribute="trailing" constant="8" id="eXM-0E-dwc"/>
+                <constraint firstItem="gwp-od-43W" firstAttribute="leading" secondItem="w09-Vm-D06" secondAttribute="trailing" constant="5" id="fI7-9u-UUm"/>
+                <constraint firstItem="w09-Vm-D06" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="quu-Nx-3DO"/>
+                <constraint firstAttribute="bottom" secondItem="gwp-od-43W" secondAttribute="bottom" id="sZo-E7-V7Z"/>
                 <constraint firstAttribute="bottom" secondItem="1yV-ao-24f" secondAttribute="bottom" id="vbq-lV-poV"/>
+                <constraint firstItem="w09-Vm-D06" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wcE-Rt-fY3"/>
                 <constraint firstItem="1yV-ao-24f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xd1-of-iyw"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -65,9 +87,4 @@
     <resources>
         <image name="Play-icon.png" width="108" height="47"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

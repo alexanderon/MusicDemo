@@ -13,7 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblSubtitle;
-@property (weak, nonatomic) IBOutlet UIButton *btnPlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnPlay,*btnTrans;
+
+@property (atomic) int rowIndex;
 - (IBAction)btnPlayClick:(id)sender;
 - (void) registerMediaPlayerNotifications;
 

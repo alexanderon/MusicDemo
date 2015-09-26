@@ -53,12 +53,12 @@
     cell.textLabel.text=[rowItem valueForProperty:MPMediaItemPropertyAlbumTitle];
     cell.detailTextLabel.text=[rowItem valueForProperty:MPMediaItemPropertyAlbumArtist ];
     
-    MPMediaItemArtwork* artWork=[artWork imageWithSize:CGSizeMake(44, 44)];
+   /* MPMediaItemArtwork* artWork=[artWork imageWithSize:CGSizeMake(44, 44)];
     if(artWork){
         cell.imageView.image =artWork;
     }else{
         cell.imageView.image=[UIImage imageNamed:@"No-artwork-albums.png"];
-    }
+    }*/
     
     return cell;
 }
@@ -71,7 +71,7 @@
     MPMediaQuery *albumsQuery = [MPMediaQuery albumsQuery];
     NSArray *albums = [albumsQuery collections];
     
-    int selectedIndex = [[self.tableView indexPathForSelectedRow] row];
+    int selectedIndex = (int)[[self.tableView indexPathForSelectedRow] row];
     MPMediaItem *selectedItem = [[albums objectAtIndex:selectedIndex] representativeItem];
     NSString *albumTitle = [selectedItem valueForProperty:MPMediaItemPropertyAlbumTitle];
     
