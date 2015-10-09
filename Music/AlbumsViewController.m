@@ -71,7 +71,7 @@
     MPMediaQuery *albumsQuery = [MPMediaQuery albumsQuery];
     NSArray *albums = [albumsQuery collections];
     
-    int selectedIndex = (int)[[self.tableView indexPathForSelectedRow] row];
+    int selectedIndex = [[self.tableView indexPathForSelectedRow] row];
     MPMediaItem *selectedItem = [[albums objectAtIndex:selectedIndex] representativeItem];
     NSString *albumTitle = [selectedItem valueForProperty:MPMediaItemPropertyAlbumTitle];
     

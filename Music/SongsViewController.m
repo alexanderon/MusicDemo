@@ -63,7 +63,7 @@
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
  MPMediaQuery *songsQuery = [MPMediaQuery songsQuery];
  NSArray *songs = [songsQuery items];
- int selectedIndex = [[self.tableView indexPathForSelectedRow] row];
+ int selectedIndex = (int)[[self.tableView indexPathForSelectedRow] row];
  
  MPMediaItem *selectedItem = [[songs objectAtIndex:selectedIndex] representativeItem];
  MPMusicPlayerController *musicPlayer = [MPMusicPlayerController systemMusicPlayer];

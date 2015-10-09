@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72F27521BC7910300F67170 /* MDAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B72F27511BC7910300F67170 /* MDAudioFile.m */; settings = {ASSET_TAGS = (); }; };
 		B74555D41BB3D64C00963EBA /* SongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74555D31BB3D64C00963EBA /* SongsListViewController.m */; };
 		B7695B1D1BB3CC4500493805 /* CustomPopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7695B1B1BB3CC4500493805 /* CustomPopUpController.m */; };
 		B7695B1E1BB3CC4500493805 /* CustomPopUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7695B1C1BB3CC4500493805 /* CustomPopUpController.xib */; };
+		B76D18791BB67BB70037742F /* repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = B76D18781BB67BB70037742F /* repeat.png */; settings = {ASSET_TAGS = (); }; };
+		B77A3E611BC255BD00455D91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77A3E601BC255BD00455D91 /* AVFoundation.framework */; };
+		B789F3C81BBBF48600250B61 /* repeat1.png in Resources */ = {isa = PBXBuildFile; fileRef = B789F3C71BBBF48600250B61 /* repeat1.png */; settings = {ASSET_TAGS = (); }; };
+		B7B9C1B11BB9052D004C95B8 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B7B9C1B01BB9052D004C95B8 /* Stop.png */; settings = {ASSET_TAGS = (); }; };
+		B7B9C1B51BB90578004C95B8 /* Sufffle.png in Resources */ = {isa = PBXBuildFile; fileRef = B7B9C1B41BB90578004C95B8 /* Sufffle.png */; settings = {ASSET_TAGS = (); }; };
+		B7B9C1B71BB905DF004C95B8 /* rep.png in Resources */ = {isa = PBXBuildFile; fileRef = B7B9C1B61BB905DF004C95B8 /* rep.png */; settings = {ASSET_TAGS = (); }; };
 		B7C7D4391BB150A700131B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D4381BB150A700131B51 /* main.m */; };
 		B7C7D43C1BB150A700131B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D43B1BB150A700131B51 /* AppDelegate.m */; };
 		B7C7D43F1BB150A700131B51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D43E1BB150A700131B51 /* ViewController.m */; };
@@ -59,6 +66,7 @@
 		B7C7D4B11BB1748300131B51 /* Table-view-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C7D48D1BB1748300131B51 /* Table-view-background@2x.png */; };
 		B7C7D4B21BB1748300131B51 /* Table-view-selected-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C7D48E1BB1748300131B51 /* Table-view-selected-background.png */; };
 		B7C7D4B31BB1748300131B51 /* Table-view-selected-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C7D48F1BB1748300131B51 /* Table-view-selected-background@2x.png */; };
+		B7CAD1B61BC2B98E00A438E9 /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = B7CAD1B51BC2B98E00A438E9 /* Songs */; settings = {ASSET_TAGS = (); }; };
 		B7E1C1591BB5548D00570343 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1C1361BB5548D00570343 /* back.png */; };
 		B7E1C15A1BB5548D00570343 /* chat_add_song.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1C1371BB5548D00570343 /* chat_add_song.png */; };
 		B7E1C15B1BB5548D00570343 /* chat_player_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1C1381BB5548D00570343 /* chat_player_pause.png */; };
@@ -108,11 +116,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B72F27501BC7910300F67170 /* MDAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAudioFile.h; sourceTree = "<group>"; };
+		B72F27511BC7910300F67170 /* MDAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAudioFile.m; sourceTree = "<group>"; };
 		B74555D21BB3D64C00963EBA /* SongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListViewController.h; sourceTree = "<group>"; };
-		B74555D31BB3D64C00963EBA /* SongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListViewController.m; sourceTree = "<group>"; };
+		B74555D31BB3D64C00963EBA /* SongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SongsListViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		B7695B1A1BB3CC4500493805 /* CustomPopUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopUpController.h; sourceTree = "<group>"; };
 		B7695B1B1BB3CC4500493805 /* CustomPopUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopUpController.m; sourceTree = "<group>"; };
 		B7695B1C1BB3CC4500493805 /* CustomPopUpController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPopUpController.xib; sourceTree = "<group>"; };
+		B76D18781BB67BB70037742F /* repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat.png; sourceTree = "<group>"; };
+		B76D187B1BB67EFD0037742F /* Music.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music.profdata; sourceTree = "<group>"; };
+		B77A3E601BC255BD00455D91 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B789F3C71BBBF48600250B61 /* repeat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat1.png; sourceTree = "<group>"; };
+		B7B9C1B01BB9052D004C95B8 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
+		B7B9C1B41BB90578004C95B8 /* Sufffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sufffle.png; sourceTree = "<group>"; };
+		B7B9C1B61BB905DF004C95B8 /* rep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rep.png; sourceTree = "<group>"; };
 		B7C7D4331BB150A700131B51 /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C7D4371BB150A700131B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7C7D4381BB150A700131B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +188,7 @@
 		B7C7D48D1BB1748300131B51 /* Table-view-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Table-view-background@2x.png"; sourceTree = "<group>"; };
 		B7C7D48E1BB1748300131B51 /* Table-view-selected-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Table-view-selected-background.png"; sourceTree = "<group>"; };
 		B7C7D48F1BB1748300131B51 /* Table-view-selected-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Table-view-selected-background@2x.png"; sourceTree = "<group>"; };
+		B7CAD1B51BC2B98E00A438E9 /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
 		B7E1C1361BB5548D00570343 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		B7E1C1371BB5548D00570343 /* chat_add_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_add_song.png; sourceTree = "<group>"; };
 		B7E1C1381BB5548D00570343 /* chat_player_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_player_pause.png; sourceTree = "<group>"; };
@@ -215,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77A3E611BC255BD00455D91 /* AVFoundation.framework in Frameworks */,
 				B7C7D45D1BB150ED00131B51 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +248,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B76D187A1BB67EFD0037742F /* OptimizationProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				B76D187B1BB67EFD0037742F /* Music.profdata */,
+			);
+			path = OptimizationProfiles;
+			sourceTree = "<group>";
+		};
 		B7C7D42A1BB150A700131B51 = {
 			isa = PBXGroup;
 			children = (
+				B77A3E601BC255BD00455D91 /* AVFoundation.framework */,
+				B7C7D45C1BB150ED00131B51 /* MediaPlayer.framework */,
+				B7CAD1B51BC2B98E00A438E9 /* Songs */,
 				B7E69A4A1BB3FA18002BC9C3 /* Music Player */,
 				B74555D21BB3D64C00963EBA /* SongsListViewController.h */,
 				B74555D31BB3D64C00963EBA /* SongsListViewController.m */,
@@ -239,10 +269,10 @@
 				B7695B1A1BB3CC4500493805 /* CustomPopUpController.h */,
 				B7695B1B1BB3CC4500493805 /* CustomPopUpController.m */,
 				B7695B1C1BB3CC4500493805 /* CustomPopUpController.xib */,
-				B7C7D45C1BB150ED00131B51 /* MediaPlayer.framework */,
 				B7C7D4351BB150A700131B51 /* Music */,
 				B7C7D44F1BB150A700131B51 /* MusicTests */,
 				B7C7D4341BB150A700131B51 /* Products */,
+				B76D187A1BB67EFD0037742F /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,10 +381,14 @@
 		B7E1C1351BB5548D00570343 /* 108 */ = {
 			isa = PBXGroup;
 			children = (
+				B789F3C71BBBF48600250B61 /* repeat1.png */,
+				B7B9C1B61BB905DF004C95B8 /* rep.png */,
+				B7B9C1B01BB9052D004C95B8 /* Stop.png */,
+				B7E1C1391BB5548D00570343 /* chat_player_play.png */,
+				B76D18781BB67BB70037742F /* repeat.png */,
 				B7E1C1361BB5548D00570343 /* back.png */,
 				B7E1C1371BB5548D00570343 /* chat_add_song.png */,
 				B7E1C1381BB5548D00570343 /* chat_player_pause.png */,
-				B7E1C1391BB5548D00570343 /* chat_player_play.png */,
 				B7E1C13A1BB5548D00570343 /* edit.png */,
 				B7E1C13B1BB5548D00570343 /* edit_profile_image.png */,
 				B7E1C13C1BB5548D00570343 /* emotion.png */,
@@ -366,6 +400,7 @@
 				B7E1C1421BB5548D00570343 /* next.png */,
 				B7E1C1431BB5548D00570343 /* next_selector.png */,
 				B7E1C1441BB5548D00570343 /* notification.png */,
+				B7B9C1B41BB90578004C95B8 /* Sufffle.png */,
 				B7E1C1451BB5548D00570343 /* pause.png */,
 				B7E1C1461BB5548D00570343 /* play.png */,
 				B7E1C1471BB5548D00570343 /* player_next.png */,
@@ -393,6 +428,8 @@
 		B7E69A4A1BB3FA18002BC9C3 /* Music Player */ = {
 			isa = PBXGroup;
 			children = (
+				B72F27501BC7910300F67170 /* MDAudioFile.h */,
+				B72F27511BC7910300F67170 /* MDAudioFile.m */,
 				B7E69A4B1BB3FA3A002BC9C3 /* MediaPlayer.h */,
 				B7E69A4C1BB3FA3A002BC9C3 /* MediaPlayer.m */,
 			);
@@ -443,11 +480,16 @@
 		B7C7D42B1BB150A700131B51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = RAHUL;
 				TargetAttributes = {
 					B7C7D4321BB150A700131B51 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B7C7D44B1BB150A700131B51 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -491,7 +533,9 @@
 				B7E1C1601BB5548D00570343 /* help.png in Resources */,
 				B7C7D4901BB1748300131B51 /* Albums-tab-bar-icon.png in Resources */,
 				B7C7D4A21BB1748300131B51 /* Pause-icon.png in Resources */,
+				B76D18791BB67BB70037742F /* repeat.png in Resources */,
 				B7E1C1771BB5548D00570343 /* speech_to_text.png in Resources */,
+				B7B9C1B71BB905DF004C95B8 /* rep.png in Resources */,
 				B7E1C17B1BB5548D00570343 /* user_selector.png in Resources */,
 				B7C7D49B1BB1748300131B51 /* Nav-button@2x.png in Resources */,
 				B7E1C1661BB5548D00570343 /* next_selector.png in Resources */,
@@ -519,10 +563,12 @@
 				B7E1C1711BB5548D00570343 /* playlist_selector.png in Resources */,
 				B7C7D4AD1BB1748300131B51 /* Tab-bar@2x.png in Resources */,
 				B7C7D4471BB150A700131B51 /* LaunchScreen.xib in Resources */,
+				B7B9C1B11BB9052D004C95B8 /* Stop.png in Resources */,
 				B7C7D4AE1BB1748300131B51 /* Table-view-album-background.png in Resources */,
 				B7E1C16C1BB5548D00570343 /* player_pause.png in Resources */,
 				B7C7D4B31BB1748300131B51 /* Table-view-selected-background@2x.png in Resources */,
 				B7C7D4671BB15E8200131B51 /* No-artwork-albums@2x.png in Resources */,
+				B7B9C1B51BB90578004C95B8 /* Sufffle.png in Resources */,
 				B7C7D49F1BB1748300131B51 /* Next-icon@2x.png in Resources */,
 				B7E1C1731BB5548D00570343 /* prev_selctor.png in Resources */,
 				B7E1C1691BB5548D00570343 /* play.png in Resources */,
@@ -546,7 +592,9 @@
 				B7C7D4951BB1748300131B51 /* Nav-bar-back-button-highlited@2x.png in Resources */,
 				B7C7D4921BB1748300131B51 /* Music-controls-background.png in Resources */,
 				B7C7D4AB1BB1748300131B51 /* Tab-bar-selected@2x.png in Resources */,
+				B7CAD1B61BC2B98E00A438E9 /* Songs in Resources */,
 				B7E1C16A1BB5548D00570343 /* player_next.png in Resources */,
+				B789F3C81BBBF48600250B61 /* repeat1.png in Resources */,
 				B7E1C16B1BB5548D00570343 /* player_next_selector.png in Resources */,
 				B7E1C1611BB5548D00570343 /* i6^cimgpsh_orig_selector.png in Resources */,
 				B7C7D49A1BB1748300131B51 /* Nav-button.png in Resources */,
@@ -576,6 +624,7 @@
 				B7C7D43F1BB150A700131B51 /* ViewController.m in Sources */,
 				B7E69A4D1BB3FA3A002BC9C3 /* MediaPlayer.m in Sources */,
 				B7C7D4601BB1563000131B51 /* SongsViewController.m in Sources */,
+				B72F27521BC7910300F67170 /* MDAudioFile.m in Sources */,
 				B7C7D46A1BB1678000131B51 /* AlbumViewController.m in Sources */,
 				B7C7D43C1BB150A700131B51 /* AppDelegate.m in Sources */,
 				B7695B1D1BB3CC4500493805 /* CustomPopUpController.m in Sources */,
@@ -708,11 +757,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Rajnikant Joshi (388ZZQ45C9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rajnikant Joshi (388ZZQ45C9)";
 				INFOPLIST_FILE = Music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9spl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c2d92d0b-9852-4070-8685-c3555083eed3";
 			};
@@ -722,11 +773,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Rajnikant Joshi (388ZZQ45C9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rajnikant Joshi (388ZZQ45C9)";
 				INFOPLIST_FILE = Music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9spl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c2d92d0b-9852-4070-8685-c3555083eed3";
 			};

@@ -181,7 +181,7 @@
         NSUInteger trackNumber = [[[albumTracks objectAtIndex:(indexPath.row-1)]  valueForProperty:MPMediaItemPropertyAlbumTrackNumber] unsignedIntegerValue];
         
         if (trackNumber) {
-            cell.textLabel.text = [NSString stringWithFormat:@"%i. %@", trackNumber, [[[albumTracks objectAtIndex:(indexPath.row-1)] representativeItem] valueForProperty:MPMediaItemPropertyTitle]];
+            cell.textLabel.text = [NSString stringWithFormat:@"%d. %@", (int)trackNumber, [[[albumTracks objectAtIndex:(indexPath.row-1)] representativeItem] valueForProperty:MPMediaItemPropertyTitle]];
         } else {
             cell.textLabel.text = [[[albumTracks objectAtIndex:(indexPath.row-1)] representativeItem] valueForProperty:MPMediaItemPropertyTitle];
         }
@@ -249,7 +249,7 @@
     [albumQuery addFilterPredicate:albumPredicate];
     NSArray *albumTracks = [albumQuery items];
     
-    int selectedIndex = [[self.tableView indexPathForSelectedRow] row];
+    int selectedIndex = (int)[[self.tableView indexPathForSelectedRow]row];
     
     MPMediaItem *selectedItem = [[albumTracks objectAtIndex:selectedIndex-1] representativeItem];
     

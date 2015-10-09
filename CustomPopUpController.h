@@ -13,11 +13,16 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblSubtitle;
-@property (weak, nonatomic) IBOutlet UIButton *btnPlay,*btnTrans;
+@property (weak, nonatomic) IBOutlet UIButton *btnPlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnTrans;
 
 @property (atomic) int rowIndex;
+@property(weak,nonatomic)AVPlayer *musicPlayer;
+@property   (strong,nonatomic)NSMutableArray *completeArray;
+
+
 - (IBAction)btnPlayClick:(id)sender;
-- (void) registerMediaPlayerNotifications;
+
 
 
 @end

@@ -10,10 +10,11 @@
 
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface MediaPlayer : NSObject
 
-@property(nonatomic,retain)   MPMusicPlayerController *musicPlayer;
+@property(nonatomic,retain)   AVPlayer *musicPlayer;
 
 + (MediaPlayer*)sharedManager;
 
