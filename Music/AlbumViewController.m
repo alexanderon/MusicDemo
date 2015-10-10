@@ -7,6 +7,7 @@
 //
 
 #import "AlbumViewController.h"
+#import "CustomPopUpController.h"
 
 @interface AlbumViewController ()
 @end
@@ -130,6 +131,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+   
     MPMediaQuery *albumQuery =[MPMediaQuery albumsQuery];
     
     MPMediaPropertyPredicate *albumPredicate=[MPMediaPropertyPredicate  predicateWithValue:albumTitle forProperty:MPMediaItemPropertyAlbumTitle];
@@ -139,7 +141,6 @@
     return [albumTracks count]+1;
     
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -153,6 +154,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
     if ([indexPath row] == 0) {
         static NSString *CellIdentifier = @"InfoCell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
@@ -206,6 +209,22 @@
 }
 
 
+
+#pragma mark - Table view dalegate
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+     
+  /*   CustomPopUpController *audioPlayer =[self.storyboard instantiateViewControllerWithIdentifier:@"CustomPopUpController"];
+     [self presentViewController:audioPlayer animated:YES completion:nil];*/
+    
+    CustomPopUpController *audioPlayerController =[[CustomPopUpController alloc]init];
+    audioPlayerController.view.frame=CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height-124);
+    [self.view addSubview:audioPlayerController.view];
+
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -249,7 +268,7 @@
     [albumQuery addFilterPredicate:albumPredicate];
     NSArray *albumTracks = [albumQuery items];
     
-    int selectedIndex = (int)[[self.tableView indexPathForSelectedRow]row];
+  /*  int selectedIndex = (int)[[self.tableView indexPathForSelectedRow]row];
     
     MPMediaItem *selectedItem = [[albumTracks objectAtIndex:selectedIndex-1] representativeItem];
     
@@ -258,7 +277,7 @@
     [musicPlayer setQueueWithItemCollection:[MPMediaItemCollection collectionWithItems:[albumQuery items]]];
     [musicPlayer setNowPlayingItem:selectedItem];
     
-    [musicPlayer play];
+    [musicPlayer play];*/
 }
 
 @end

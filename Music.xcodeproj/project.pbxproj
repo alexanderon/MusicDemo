@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B72F27521BC7910300F67170 /* MDAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B72F27511BC7910300F67170 /* MDAudioFile.m */; settings = {ASSET_TAGS = (); }; };
+		B73B6F931BC79C9A008786B3 /* AlbumsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B6F921BC79C9A008786B3 /* AlbumsGroupViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B74555D41BB3D64C00963EBA /* SongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74555D31BB3D64C00963EBA /* SongsListViewController.m */; };
 		B7695B1D1BB3CC4500493805 /* CustomPopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7695B1B1BB3CC4500493805 /* CustomPopUpController.m */; };
 		B7695B1E1BB3CC4500493805 /* CustomPopUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7695B1C1BB3CC4500493805 /* CustomPopUpController.xib */; };
@@ -26,7 +27,6 @@
 		B7C7D4531BB150A700131B51 /* MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D4521BB150A700131B51 /* MusicTests.m */; };
 		B7C7D45D1BB150ED00131B51 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C7D45C1BB150ED00131B51 /* MediaPlayer.framework */; };
 		B7C7D4601BB1563000131B51 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D45F1BB1563000131B51 /* SongsViewController.m */; };
-		B7C7D4631BB15D7800131B51 /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D4621BB15D7800131B51 /* AlbumsViewController.m */; };
 		B7C7D4661BB15E8200131B51 /* No-artwork-albums.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C7D4641BB15E8200131B51 /* No-artwork-albums.png */; };
 		B7C7D4671BB15E8200131B51 /* No-artwork-albums@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C7D4651BB15E8200131B51 /* No-artwork-albums@2x.png */; };
 		B7C7D46A1BB1678000131B51 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C7D4691BB1678000131B51 /* AlbumViewController.m */; };
@@ -118,6 +118,8 @@
 /* Begin PBXFileReference section */
 		B72F27501BC7910300F67170 /* MDAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAudioFile.h; sourceTree = "<group>"; };
 		B72F27511BC7910300F67170 /* MDAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAudioFile.m; sourceTree = "<group>"; };
+		B73B6F911BC79C9A008786B3 /* AlbumsGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsGroupViewController.h; sourceTree = "<group>"; };
+		B73B6F921BC79C9A008786B3 /* AlbumsGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsGroupViewController.m; sourceTree = "<group>"; };
 		B74555D21BB3D64C00963EBA /* SongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListViewController.h; sourceTree = "<group>"; };
 		B74555D31BB3D64C00963EBA /* SongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SongsListViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		B7695B1A1BB3CC4500493805 /* CustomPopUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopUpController.h; sourceTree = "<group>"; };
@@ -146,8 +148,6 @@
 		B7C7D45C1BB150ED00131B51 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B7C7D45E1BB1563000131B51 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
 		B7C7D45F1BB1563000131B51 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
-		B7C7D4611BB15D7800131B51 /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
-		B7C7D4621BB15D7800131B51 /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
 		B7C7D4641BB15E8200131B51 /* No-artwork-albums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No-artwork-albums.png"; sourceTree = "<group>"; };
 		B7C7D4651BB15E8200131B51 /* No-artwork-albums@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No-artwork-albums@2x.png"; sourceTree = "<group>"; };
 		B7C7D4681BB1678000131B51 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
@@ -301,8 +301,6 @@
 				B7C7D4361BB150A700131B51 /* Supporting Files */,
 				B7C7D45E1BB1563000131B51 /* SongsViewController.h */,
 				B7C7D45F1BB1563000131B51 /* SongsViewController.m */,
-				B7C7D4611BB15D7800131B51 /* AlbumsViewController.h */,
-				B7C7D4621BB15D7800131B51 /* AlbumsViewController.m */,
 				B7C7D4681BB1678000131B51 /* AlbumViewController.h */,
 				B7C7D4691BB1678000131B51 /* AlbumViewController.m */,
 			);
@@ -432,6 +430,8 @@
 				B72F27511BC7910300F67170 /* MDAudioFile.m */,
 				B7E69A4B1BB3FA3A002BC9C3 /* MediaPlayer.h */,
 				B7E69A4C1BB3FA3A002BC9C3 /* MediaPlayer.m */,
+				B73B6F911BC79C9A008786B3 /* AlbumsGroupViewController.h */,
+				B73B6F921BC79C9A008786B3 /* AlbumsGroupViewController.m */,
 			);
 			name = "Music Player";
 			sourceTree = "<group>";
@@ -623,13 +623,13 @@
 			files = (
 				B7C7D43F1BB150A700131B51 /* ViewController.m in Sources */,
 				B7E69A4D1BB3FA3A002BC9C3 /* MediaPlayer.m in Sources */,
+				B73B6F931BC79C9A008786B3 /* AlbumsGroupViewController.m in Sources */,
 				B7C7D4601BB1563000131B51 /* SongsViewController.m in Sources */,
 				B72F27521BC7910300F67170 /* MDAudioFile.m in Sources */,
 				B7C7D46A1BB1678000131B51 /* AlbumViewController.m in Sources */,
 				B7C7D43C1BB150A700131B51 /* AppDelegate.m in Sources */,
 				B7695B1D1BB3CC4500493805 /* CustomPopUpController.m in Sources */,
 				B7C7D4391BB150A700131B51 /* main.m in Sources */,
-				B7C7D4631BB15D7800131B51 /* AlbumsViewController.m in Sources */,
 				B74555D41BB3D64C00963EBA /* SongsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
